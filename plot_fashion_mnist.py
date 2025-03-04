@@ -1,30 +1,37 @@
-import numpy as np
-import matplotlib.pyplot as plt
-from torchvision import datasets
 import wandb
+import matplotlib.pyplot as plt
+import numpy as np
+from keras.datasets import fashion_mnist
 
-# Initialize WandB
-wandb.init(project="fashion-mnist-visualization", name="sample-images")
+# Initialize wandb
+wandb.init(project="fashion-mnist-classification", name="data-exploration")
 
-# Load Fashion-MNIST dataset
-fashion_mnist = datasets.FashionMNIST(root="./data", train=True, download=True)
-images, labels = fashion_mnist.data.numpy(), fashion_mnist.targets.numpy()
+# Load Fashion MNIST data
+(x_train, y_train), (x_test, y_test) = fashion_mnist.load_data()
+class_names = ['T-shirt/top', 'Trouser', 'Pullover', 'Dress', 'Coat',
+               'Sandal', 'Shirt', 'Sneaker', 'Bag', 'Ankle boot']
 
-# Class names in Fashion-MNIST dataset
-class_names = ["T-shirt/top", "Trouser", "Pullover", "Dress", "Coat", 
-               "Sandal", "Shirt", "Sneaker", "Bag", "Ankle boot"]
+# Create sample images for each class
+sample_images = []
+for c in range(10):
+    class_indices = np.where(y_train == c)
+    sample_index = class_indices[0][0]  # Get the first image for each class
+    sample_images.append(x_train[sample_index])
 
-# Log 5 batches (each with 7 images)
-for index in range(5):
-    fig, axes = plt.subplots(1, 7, figsize=(12, 3))
-    for i in range(7):
-        img_idx = index * 7 + i
-        axes[i].imshow(images[img_idx], cmap="gray")
-        axes[i].set_title(class_names[labels[img_idx]])
-        axes[i].axis("off")
-    
-    # Log the batch of images to WandB
-    wandb.log({f"Batch {index}": wandb.Image(fig)})
-    plt.close(fig)
+# Simulate 50 steps for the "Index" bar
+num_indices = 50  # The horizontal bar should go from 0 to 50
+
+for index in range(num_indices):
+    # Create a figure to display all 10 images in one grid
+    fig, axes = plt.subplots(2, 5, figsize=(15, 6))
+    for i, ax in enumerate(axes.flat):
+        ax.imshow(sample_images[i], cmap='gray')
+        ax.set_title(class_names[i])
+        ax.axis('off')
+    plt.suptitle(f"Index {index} - Sample Fashion MNIST Images", fontsize=16)
+
+    # Log the entire grid as a single image in WandB
+    wandb.log({"fashion_mnist_grid": wandb.Image(fig), "Index": index})  # No step= here
+    plt.close(fig)  # Close figure to prevent memory leaks
 
 wandb.finish()
