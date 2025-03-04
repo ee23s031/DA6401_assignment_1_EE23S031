@@ -1,0 +1,1 @@
+{"fashion_mnist_grid": {"_type": "image-file", "sha256": "15e1712928bc89ed8d36631c308bc90bdd4c9e8b06b18a7973a22a6204eb512e", "size": 43229, "path": "media/images/fashion_mnist_grid_49_15e1712928bc89ed8d36.png", "format": "png", "width": 1500, "height": 600}, "Index": 49, "_timestamp": 1741076330.303694, "_runtime": 20.03031301498413, "_step": 49, "_wandb": {"runtime": 19}}
