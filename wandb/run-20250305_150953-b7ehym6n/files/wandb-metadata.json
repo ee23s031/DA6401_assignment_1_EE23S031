@@ -1,0 +1,53 @@
+{
+    "os": "Windows-10-10.0.26100-SP0",
+    "python": "3.9.21",
+    "heartbeatAt": "2025-03-05T09:39:55.232198",
+    "startedAt": "2025-03-05T09:39:53.943149",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "D:\\MS_IITM\\Courses\\DA6401\\Assignment_1_EE23S031\\DA6401_assignment_1_EE23S031\\FNN.py",
+    "codePathLocal": "FNN.py",
+    "codePath": "FNN.py",
+    "git": {
+        "remote": "https://github.com/ee23s031/DA6401_assignment_1_EE23S031.git",
+        "commit": "628eb5ed00ed801ae282b3463c4c51115c56398b"
+    },
+    "email": "ee23s031@smail.iitm.ac.in",
+    "root": "D:/MS_IITM/Courses/DA6401/Assignment_1_EE23S031/DA6401_assignment_1_EE23S031",
+    "host": "Mathew_Cigi",
+    "username": "mathe",
+    "executable": "D:\\path\\to\\your\\environments\\directory\\da6401_env\\python.exe",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 3201.0,
+        "min": 0.0,
+        "max": 3201.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3201.0,
+            "min": 0.0,
+            "max": 3201.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 299.99999618530273,
+            "used": 242.11953735351562
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3060 Laptop GPU",
+            "memory_total": 6442450944
+        }
+    ],
+    "memory": {
+        "total": 31.26251220703125
+    }
+}

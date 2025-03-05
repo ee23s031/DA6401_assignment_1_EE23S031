@@ -1,0 +1,28 @@
+2025-03-05 15:09:53,945 INFO    MainThread:40272 [wandb_setup.py:_flush():76] Current SDK version is 0.16.4
+2025-03-05 15:09:53,946 INFO    MainThread:40272 [wandb_setup.py:_flush():76] Configure stats pid to 40272
+2025-03-05 15:09:53,946 INFO    MainThread:40272 [wandb_setup.py:_flush():76] Loading settings from C:\Users\mathe\.config\wandb\settings
+2025-03-05 15:09:53,946 INFO    MainThread:40272 [wandb_setup.py:_flush():76] Loading settings from D:\MS_IITM\Courses\DA6401\Assignment_1_EE23S031\DA6401_assignment_1_EE23S031\wandb\settings
+2025-03-05 15:09:53,946 INFO    MainThread:40272 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2025-03-05 15:09:53,946 INFO    MainThread:40272 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2025-03-05 15:09:53,946 INFO    MainThread:40272 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'FNN.py', 'program_abspath': 'D:\\MS_IITM\\Courses\\DA6401\\Assignment_1_EE23S031\\DA6401_assignment_1_EE23S031\\FNN.py', 'program': 'D:\\MS_IITM\\Courses\\DA6401\\Assignment_1_EE23S031\\DA6401_assignment_1_EE23S031\\FNN.py'}
+2025-03-05 15:09:53,946 INFO    MainThread:40272 [wandb_init.py:_log_setup():526] Logging user logs to D:\MS_IITM\Courses\DA6401\Assignment_1_EE23S031\DA6401_assignment_1_EE23S031\wandb\run-20250305_150953-b7ehym6n\logs\debug.log
+2025-03-05 15:09:53,946 INFO    MainThread:40272 [wandb_init.py:_log_setup():527] Logging internal logs to D:\MS_IITM\Courses\DA6401\Assignment_1_EE23S031\DA6401_assignment_1_EE23S031\wandb\run-20250305_150953-b7ehym6n\logs\debug-internal.log
+2025-03-05 15:09:53,946 INFO    MainThread:40272 [wandb_init.py:init():566] calling init triggers
+2025-03-05 15:09:53,946 INFO    MainThread:40272 [wandb_init.py:init():573] wandb.init called with sweep_config: {}
+config: {}
+2025-03-05 15:09:53,946 INFO    MainThread:40272 [wandb_init.py:init():616] starting backend
+2025-03-05 15:09:53,946 INFO    MainThread:40272 [wandb_init.py:init():620] setting up manager
+2025-03-05 15:09:53,948 INFO    MainThread:40272 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn, using: spawn
+2025-03-05 15:09:53,950 INFO    MainThread:40272 [wandb_init.py:init():628] backend started and connected
+2025-03-05 15:09:53,952 INFO    MainThread:40272 [wandb_init.py:init():720] updated telemetry
+2025-03-05 15:09:54,025 INFO    MainThread:40272 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2025-03-05 15:09:54,697 INFO    MainThread:40272 [wandb_run.py:_on_init():2262] communicating current version
+2025-03-05 15:09:55,157 INFO    MainThread:40272 [wandb_run.py:_on_init():2271] got version response upgrade_message: "wandb version 0.19.8 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2025-03-05 15:09:55,157 INFO    MainThread:40272 [wandb_init.py:init():804] starting run threads in backend
+2025-03-05 15:09:59,701 INFO    MainThread:40272 [wandb_run.py:_console_start():2241] atexit reg
+2025-03-05 15:09:59,701 INFO    MainThread:40272 [wandb_run.py:_redirect():2096] redirect: wrap_raw
+2025-03-05 15:09:59,701 INFO    MainThread:40272 [wandb_run.py:_redirect():2161] Wrapping output streams.
+2025-03-05 15:09:59,701 INFO    MainThread:40272 [wandb_run.py:_redirect():2186] Redirects installed.
+2025-03-05 15:09:59,702 INFO    MainThread:40272 [wandb_init.py:init():847] run started, returning control to user process
+2025-03-05 15:10:33,493 WARNING MsgRouterThr:40272 [router.py:message_loop():77] message_loop has been closed
